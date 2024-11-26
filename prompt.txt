@@ -1,3 +1,0 @@
-If player won the toss, then we will give two option bat and ball. 1.1 If user selects for bat then , for system the run will get generate between 0 to 50 , and then score hitted by player and system will get compare. 1.2 if user selects for ball then again the run for system will get generate between 0 to 50 , and batting of player will come.
-
-If system wins the toss , then only one will be there that is batting. 2.1 if system chooses for batting , then runs for system will generate impleicitly and batting of player will come
