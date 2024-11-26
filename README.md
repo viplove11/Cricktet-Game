@@ -1,4 +1,4 @@
-# Cricket Game
+# Cricket Game | [Link to the Project](https://cwv-gully-cric.netlify.app/)
 
 Welcome to the Cricket Game! This project is a simple cricket simulation game built using React and Vite. Players can input their names and teams, and then compete against a simulated system opponent.
 
