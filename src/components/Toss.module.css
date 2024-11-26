@@ -1,0 +1,129 @@
+.TossDiv {
+  border: 1px solid white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.TossDiv img {
+  height: 200px;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px grey;
+}
+
+.PlayerDetails {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.tossButton {
+  margin-top: 20px;
+}
+
+.tossResult {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tossButton {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.tossButton .tossbtn {
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 20px; /* Space above the circle */
+  margin-bottom: 2px; /* Space above the circle */
+  align-self: center;
+  box-shadow: 0px 0px 10px -2px black;
+}
+.choiceBtn{
+  margin-bottom: 20px;
+}
+/* Animation keyframes */
+@keyframes tossAnimation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    background-color: rgb(210, 53, 119);
+  }
+  50% {
+    transform: translateY(-110px) rotate(180deg); /* Move up and rotate halfway */
+    background-color: rgb(139, 95, 113);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg); /* Come back down and complete rotation */
+    background-color: rgb(213, 63, 125);
+  }
+}
+
+/* Animation styles */
+.animate {
+  animation: tossAnimation 1s ease forwards; /* Apply the animation */
+}
+
+.winnerChoiceBtn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .TossDiv {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center align items */
+  }
+
+  .tossButton {
+    width: 100%; /* Full width for buttons */
+  }
+
+  .tossButton .tossbtn {
+    font-size: 20px; /* Smaller font size for buttons */
+  }
+
+  .circle {
+    width: 40px; /* Smaller circle */
+    height: 40px; /* Smaller circle */
+  }
+
+  .tossResult {
+    font-size: 18px; /* Smaller font size for results */
+  }
+}
+
+@media (max-width: 480px) {
+  .TossDiv img {
+    height: 150px; /* Smaller images on extra small screens */
+  }
+
+  .tossButton .tossbtn {
+    font-size: 18px; /* Even smaller font size for buttons */
+  }
+
+  .tossResult {
+    font-size: 16px; /* Smaller font size for results */
+  }
+}

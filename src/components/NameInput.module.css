@@ -1,0 +1,48 @@
+.NameInput {
+  background-color: white; /* Background color */
+  padding: 30px; /* Padding around the input */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.createUserbtn {
+  padding: 10px 20px; /* Horizontal and vertical padding */
+  font-weight: bold; /* Bold text */
+  font-size: 16px; /* Default font size */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .NameInput {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .createUserbtn {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .NameInput {
+    padding: 15px; /* Further reduce padding for very small screens */
+  }
+
+  .createUserbtn {
+    padding: 6px 12px; /* Further adjust padding */
+    font-size: 12px; /* Further reduce font size */
+  }
+}
+
+@media (max-width: 300px) {
+  .createUserbtn {
+    font-size: 10px; /* Reduce font size for very small screens */
+  }
+}
