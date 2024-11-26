@@ -59,7 +59,7 @@ export const Toss = ({ playerName, playerTeam }) => {
   return (
     <div className={styles.TossDiv}>
       <div>
-        <img src="public\player.png" alt="Player" />
+        <img src="../../public/player.png" alt="Player" />
         <div className={styles.PlayerDetails}>
           <span>Player Name: {nameofPlayer}</span>
           <span>Player Team: {nameofTeam}</span>
